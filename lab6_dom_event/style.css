@@ -1,0 +1,8 @@
+body { font-family: system-ui, sans-serif; max-width: 640px; margin: 24px auto; padding: 0 16px; line-height: 1.5; }
+label, input { display: block; margin-top: 8px; }
+button { margin-top: 8px; }
+.highlight { color: #173f75; background-color: #e6f1ff; border-left: 4px solid #3478c8; padding: 12px; }
+.teks-besar { font-size: 1.4rem; }
+.sembunyi { display: none; }
+.selesai span { text-decoration: line-through; color: #687386; }
+li { margin-bottom: 8px; }

@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Praktikum DOM dan Event</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <h1 id="judul">Latihan DOM</h1>
+ <p id="pesan">Belum ada tindakan.</p>
+ <button id="tombolAksi" type="button">Klik Saya</button>
 
+ <hr>
+ <h2>Latihan 3 — Kelas CSS</h2>
+ <p id="teksGaya">Teks ini akan berubah gayanya.</p>
+ <button id="tombolGaya" type="button">Ubah Gaya</button>
+ <button id="tombolSembunyi" type="button">Sembunyikan/Tampilkan paragraf</button>
+
+ <hr>
+ <h2>Latihan 4 — Penghitung karakter</h2>
+ <label for="namaInput">Nama:</label>
+ <input type="text" id="namaInput" maxlength="40">
+ <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+
+ <hr>
+ <h2>Latihan 5 — Validasi form</h2>
+ <form id="formPendaftaran" novalidate>
+  <label for="nama">Nama lengkap</label>
+  <input id="nama" name="nama" type="text">
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email">
+  <label for="usia">Usia</label>
+  <input id="usia" name="usia" type="number" min="17" max="100">
+  <button type="submit">Daftar</button>
+ </form>
+ <p id="pesanForm" aria-live="polite"></p>
+
+ <hr>
+ <section>
+  <h2>Latihan 6 — Daftar Tugas</h2>
+  <label for="inputTugas">Tugas baru</label>
+  <input id="inputTugas" type="text">
+  <button id="tambahTugas" type="button">Tambah</button>
+  <p id="pesanTugas" aria-live="polite"></p>
+  <ul id="daftarTugas"></ul>
+ </section>
+</body>
+</html>
