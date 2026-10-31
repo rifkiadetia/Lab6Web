@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pendaftaran Workshop</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <main class="kartu">
+  <h1>Pendaftaran Workshop Web</h1>
+  <p class="sub">Isi data di bawah, lalu pilih sesi yang kamu ikuti.</p>
 
+  <form id="formWorkshop" novalidate>
+   <div class="field">
+    <label for="nama">Nama lengkap</label>
+    <input id="nama" type="text" autocomplete="name">
+    <small class="error" id="errNama" aria-live="polite"></small>
+   </div>
+
+   <div class="field">
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email">
+    <small class="error" id="errEmail" aria-live="polite"></small>
+   </div>
+
+   <div class="field">
+    <label for="sesi">Sesi workshop</label>
+    <select id="sesi">
+     <option value="">— Pilih sesi —</option>
+     <option value="HTML &amp; CSS Dasar (Sabtu 09.00)">HTML &amp; CSS Dasar (Sabtu 09.00)</option>
+     <option value="JavaScript DOM (Sabtu 13.00)">JavaScript DOM (Sabtu 13.00)</option>
+     <option value="Git &amp; GitHub (Minggu 09.00)">Git &amp; GitHub (Minggu 09.00)</option>
+    </select>
+    <small class="info" id="infoSesi"></small>
+    <small class="error" id="errSesi" aria-live="polite"></small>
+   </div>
+
+   <div class="field">
+    <label for="catatan">Harapan dari workshop (opsional)</label>
+    <textarea id="catatan" rows="3" maxlength="120"></textarea>
+    <small class="info"><span id="hitung">0</span>/120 karakter</small>
+   </div>
+
+   <section class="ringkasan" aria-live="polite">
+    <h2>Ringkasan</h2>
+    <p>Nama: <strong id="rNama">-</strong></p>
+    <p>Email: <strong id="rEmail">-</strong></p>
+    <p>Sesi: <strong id="rSesi">-</strong></p>
+   </section>
+
+   <div class="aksi">
+    <button type="submit">Daftar</button>
+    <button type="button" id="tombolReset" class="sekunder">Hapus isian</button>
+   </div>
+   <p id="pesanSukses" class="sukses" aria-live="polite"></p>
+  </form>
+ </main>
+</body>
+</html>
